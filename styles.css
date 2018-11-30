@@ -1,0 +1,121 @@
+body{
+	background-image: url('images/background.jpg');
+    background-size: cover;
+}
+main{
+	width: 90%;
+	margin: 0 auto;
+	background-color: pink;
+	padding: 10px;
+}
+header{
+	overflow: auto;
+}
+header figure{
+	margin: 0;
+	text-align: center;
+}
+header figure:last-child{
+	display: none;
+}
+header h1{
+	text-align: center;
+}
+nav{
+	background-image: url('images/background.jpg');
+}
+nav ul{
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+nav ul li a{
+	display: block;
+	padding: 20px;
+	border: 1px solid red;
+	font-size: 1.5em;
+}
+nav ul li a:link{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:visited{
+	color: yellow;
+}
+nav ul li a:hover{
+	background-color: white;
+	color: red;
+}
+section h2{
+	text-align: center;
+	font-size: 2em;
+}
+section article{
+	width: 250px;
+	background-color: white;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+section article h2{
+	font-size: 1.25em;
+}
+section article ul{
+	list-style: none;
+	padding-left: 10px;
+}
+footer{
+	clear: left;
+	border-top: 10px solid purple;
+	text-align: center;
+	padding-top: 25px;
+}
+@media only screen and (min-width: 395px) {
+    }
+    section article{
+	width: 325px;
+}
+section article h2{
+	font-size: 1.75em;
+}
+section article ul{
+	padding-left: 40px;
+}
+
+} /*end of 395px*/
+@media only screen and (min-width: 575px) {
+
+    }
+    header figure{
+		float: left;
+	}
+	header figure:last-child{
+    display: inline-block;
+	float: right;
+	}
+	header h1{
+		width: calc(100% - 320px);
+		display: inline-block;
+	}
+	nav ul li{
+		display: inline-block;
+		width: 120px;
+		margin: 0 calc((100% - 500px) / 8) ;
+	}
+} /*end of 575px*/
+
+@media only screen and (min-width: 650px) {
+    iframe{
+    	width: 560px;
+    	height: 315px;
+    }
+
+} /*end of 650px*/
+
+@media only screen and (min-width: 1125px) {
+    }
+    section article{
+    	float: left;
+    	margin: 0 calc((100% - 976px) / 6);
+    }
+
+} /*end of 1125px*/
